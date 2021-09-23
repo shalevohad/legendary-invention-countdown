@@ -1,0 +1,61 @@
+.container {
+  max-width: $website-width;
+  // padding: 0 1.5rem;
+  // overflow: auto;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%;
+}
+
+.btn {
+  z-index: 9999;
+  cursor: pointer;
+  display: inline-block;
+  background: $secondary-color;
+  text-decoration: none;
+  color: set-text-color($secondary-color);
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem 0.5rem;
+  transition: all $animation-speed $animation-style;
+  line-height: 1.35rem;
+
+  &:hover {
+    background: lighten($secondary-color, 10%);
+    transform: scale(1.1);
+    color: set-text-color(lighten($secondary-color, 10%));
+  }
+
+  &-danger {
+    background: $pinkShade;
+    color: set-text-color($pinkShade);
+
+    &:hover {
+      background: lighten($pinkShade, 10%);
+      color: set-text-color(lighten($pinkShade, 10%));
+    }
+  }
+
+  &-orange {
+    background: $orange;
+    color: set-text-color($orange);
+
+    &:hover {
+      background: lighten($orange, 10%);
+      color: set-text-color(lighten($orange, 10%));
+    }
+  }
+
+  &-secondary {
+    background: $secondary-color;
+    color: set-text-color($secondary-color);
+
+    &:hover {
+      background: lighten($secondary-color, 10%);
+      color: set-text-color(lighten($secondary-color, 10%));
+    }
+  }
+}

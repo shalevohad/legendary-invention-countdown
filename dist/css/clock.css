@@ -1,0 +1,32 @@
+.flipclock {
+  display: flex;
+  justify-content: center;
+  direction: ltr;
+  color: #333; }
+  .flipclock div {
+    font-family: 'Varela Round';
+    width: 10rem;
+    height: 10rem;
+    background: linear-gradient(to bottom, rgba(245, 245, 245, 0.9) 50%, rgba(245, 245, 245, 0.9) 0);
+    margin: 4rem 1rem;
+    font-size: 6rem;
+    font-weight: 800;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0.8rem 2.5rem rgba(0, 0, 0, 0.5);
+    position: relative;
+    border-radius: 25%; }
+    .flipclock div::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 3px;
+      background-color: rgba(153, 153, 153, 0.5); }
+    .flipclock div::after {
+      color: #f4f4f4;
+      content: attr(data-content);
+      font-size: 2rem;
+      font-weight: 400;
+      position: absolute;
+      bottom: 9.5rem; }

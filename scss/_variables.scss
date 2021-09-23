@@ -1,0 +1,33 @@
+$breakpoints: (phone: 415px, tablet: 768px, desktop: 992px);
+$website-width: 1280px;
+$font-stack: 'Amatic SC', 'Suez One', 'Varela Round', serif, sans-serif;
+$primary-color: #f4f4f4;
+$pinkShade: rgba(241, 195, 239, 0.6);
+$secondary-color: rgba(125, 210, 231, 0.7);
+$light-color: #fff;
+$light-color-hover: #f4f4f433;
+$medium-color: #ccc;
+$dark-color: #333;
+$red-color: rgb(245, 50, 50);
+$orange: rgb(230, 202, 78);
+$light-gray-color: #888;
+$dark-overlay-color: rgba(34, 34, 34, 0.6);
+$primary-overlay-color: rgba(138, 241, 228, 0.3);
+$bg-image: url('https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2MzIyMDY5Njc&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600');
+$btn-dark: $dark-color;
+$btn-medium: rgb(145, 145, 145);
+$btn-light: $medium-color;
+
+// Social networks
+$linkedin-color: #0077b5;
+$facebook-color: #1778F2;
+$github-color: #000;
+
+// event
+$event-img-border: rgba(235, 63, 134, 0.4);
+$event-img-width: 250px;
+$event-img-height: 250px;
+
+// Animation
+$animation-speed: 0.3s;
+$animation-style: ease-out;

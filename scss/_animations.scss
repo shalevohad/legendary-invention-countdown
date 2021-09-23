@@ -1,0 +1,12 @@
+@keyframes pulsate {
+  from {
+    transform: scale(0.7);
+   }
+  60% {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
