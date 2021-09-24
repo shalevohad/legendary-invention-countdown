@@ -10,9 +10,9 @@
   z-index: 9999;
   cursor: pointer;
   display: inline-block;
-  background: #6d95b6;
+  background: #7dd2e7;
   text-decoration: none;
-  color: #fff;
+  color: #333;
   border: none;
   border-radius: 5px;
   padding: 0.6rem 1.2rem;
@@ -20,17 +20,27 @@
   transition: all 0.3s ease-out;
   line-height: 1.35rem; }
   .btn:hover {
-    background: #8faec7;
-    transform: scale(1.1); }
+    background: #a8e1ef;
+    transform: scale(1.1);
+    color: #333; }
   .btn-danger {
-    background: rgba(241, 195, 239, 0.6); }
+    background: #db43ba;
+    color: #333; }
     .btn-danger:hover {
-      background: rgba(251, 236, 250, 0.6); }
+      background: #e36eca;
+      color: #333; }
   .btn-orange {
-    background: #f0d046;
+    background: #e6ca4e;
     color: #333; }
     .btn-orange:hover {
-      background: #f4dc75; }
+      background: #ecd77b;
+      color: #333; }
+  .btn-secondary {
+    background: #7dd2e7;
+    color: #333; }
+    .btn-secondary:hover {
+      background: #a8e1ef;
+      color: #333; }
 
 @keyframes pulsate {
   from {
@@ -50,10 +60,9 @@ body {
   background: #fff;
   font-family: "Amatic SC", "Suez One", "Varela Round", serif, sans-serif;
   line-height: 1.6;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   -webkit-font-smoothing: antialiased;
   direction: rtl;
-  overflow-y: hidden;
   overflow-x: hidden; }
 
 a {
@@ -70,7 +79,7 @@ h1, h2, h3 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background: url("https://images.unsplash.com/photo-1496661415325-ef852f9e8e7c?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2MzIyMDY5Njc&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1600") no-repeat center center/cover;
+  background: url("https://images.unsplash.com/photo-1607861884586-c7cfaed16290?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxfDB8MXxyYW5kb218MHx8d2VkZGluZ3x8fHx8fDE2MzI1MDMxMjQ&ixlib=rb-1.2.1&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=1080") no-repeat center center/cover;
   height: 100vh;
   position: relative;
   color: #f4f4f4; }
@@ -81,7 +90,7 @@ h1, h2, h3 {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: rgba(67, 125, 172, 0.4); }
+    background: rgba(232, 235, 59, 0.15); }
   .main-page .container {
     width: 100%;
     max-width: 1280px;
@@ -97,7 +106,7 @@ h1, h2, h3 {
       .main-page .container .event-img a::before {
         position: absolute;
         content: "";
-        border: 15px solid rgba(241, 195, 239, 0.6);
+        border: 15px solid rgba(235, 63, 134, 0.4);
         border-radius: 50%;
         height: 220px;
         width: 225px;
@@ -117,21 +126,23 @@ h1, h2, h3 {
         z-index: 9999;
         transition: all 0.3s ease-out; }
         .main-page .container .event-img a img:hover {
-          transform: scale(1.2); }
+          transform: scale(1.2);
+          border: 2px solid #db43ba; }
     .main-page .container #event-title {
       margin: 3rem 0 3rem;
       z-index: 2; }
       .main-page .container #event-title .event-title {
         font-size: 6rem;
         font-weight: 800;
-        text-shadow: 0 0 5px rgba(241, 195, 239, 0.6), 0 0 10px rgba(241, 195, 239, 0.6); }
+        text-shadow: 0 0 5px #db43ba, 0 0 10px #db43ba; }
         .main-page .container #event-title .event-title .delimiter {
           font-size: 8rem; }
       .main-page .container #event-title .event-subtitle {
-        color: #6d95b6;
         font-size: 5rem;
+        width: 100%;
+        font-stretch: ultra-expanded;
         font-weight: 800;
-        text-shadow: 0 0 5px #fff, 0 0 10px #fff; }
+        text-shadow: 0 0 5px #db43ba, 0 0 10px #db43ba; }
     .main-page .container #clock {
       z-index: 2; }
       .main-page .container #clock p {
@@ -144,3 +155,11 @@ h1, h2, h3 {
       flex-direction: column;
       width: 100%;
       max-width: 700px; }
+
+.flipdown.flipdown__theme-light .rotor-bottom,
+.flipdown.flipdown__theme-light .rotor-leaf-rear {
+  background-color: #ccc !important; }
+
+.flipdown.flipdown__theme-light .rotor-group-heading::before {
+  color: #333;
+  text-shadow: 0 0 5px #ccc, 0 0 10px #ccc; }
