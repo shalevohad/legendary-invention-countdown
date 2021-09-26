@@ -1,0 +1,37 @@
+@media (max-height: 768px) {
+  body {
+    overflow-y: visible; } }
+
+@media (max-height: 414px) {
+  .main-page {
+    height: 100%; } }
+
+.main-page .container .event-img a img:hover {
+  transform: scale(1.1); }
+
+.main-page .container #event-title {
+  margin: 0; }
+  .main-page .container #event-title .event-title {
+    font-size: 4rem; }
+    .main-page .container #event-title .event-title .delimiter {
+      font-size: 5rem; }
+  .main-page .container #event-title .event-subtitle {
+    font-size: 3rem; }
+
+.main-page .container #clock p {
+  font-size: 3rem; }
+
+.main-page .container .links {
+  margin-top: 1rem;
+  display: flex; }
+  @media (max-height: 767px) {
+    .main-page .container .links {
+      flex-direction: row; } }
+  .main-page .container .links a {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    font-size: 1.4rem; }
+    .main-page .container .links a span:nth-child(2) {
+      margin: 0 5px; }

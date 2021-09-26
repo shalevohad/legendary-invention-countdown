@@ -13,15 +13,23 @@
   <link
     href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Suez+One&family=Varela+Round&display=swap"
     rel="stylesheet">
-  <link rel="stylesheet" href="../node_modules/flipdown/dist/flipdown.css">
+  <link rel="stylesheet" href="css/flipdown.min.css">
+  <link rel="stylesheet" href="css/clock.css">
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" media="screen and (max-width: 768px)" href="css/mobile.css">
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <script src="../node_modules/flipdown/dist/flipdown.min.js"></script>
+  <script src="js/flipdown.min.js"></script>
   <script src="js/main.js"></script>
 
-  <title>Event Count Down</title>
+  <title>Naama & Ohad Wedding - 20/10/2021 Event Count Down</title>
+  <meta name="description" content="Wedding Naama & Ohad - 20/10/2021 Event Count Down">
+  <meta property="og:title" content="Wedding Naama & Ohad - 20/10/2021" />
+  <meta property="og:url" content="https://wedding-countdown.shalevs.org/" />
+  <meta property="og:description"
+    content="Event Count Down for Naama & Ohad Wedding at CASSIOPEIA Herzelia 20/10/2021 19:00">
+  <meta property="og:image" content="https://wedding-countdown.shalevs.org/img/profile.jpeg">
 </head>
 
 <body id="home">
@@ -39,17 +47,20 @@
       </div>
 
       <div id="clock">
-        <!-- <p>הספירה לאחור החלה...</p> -->
+        <p>20/10/2021</p>
         <div id="countdown" class="flipdown"></div>
       </div>
 
       <div class="links">
-        <a class="btn btn-danger" href="https://10comm.com/Invitation.php?token=8Z3s4Sa7" target=_blank><i
-            class="far fa-envelope"></i> לחצו להזמנה לאירוע</a>
+        <a class="btn btn-danger" href="https://10comm.com/Invitation.php?token=8Z3s4Sa7" target=_blank>
+          <span><i class="far fa-envelope"></i></span>
+          <span>הזמנה לאירוע ואישור הגעה</span>
+        </a>
         <a class="btn btn-secondary"
-          href="waze://?q=<%D7%A7%D7%A1%D7%99%D7%95%D7%A4%D7%99%D7%90%D7%94 %D7%90%D7%99%D7%A8%D7%95%D7%A2%D7%99%D7%9D>"><i
-            class="fab fa-waze"></i> ניווט
-          לאירוע</a>
+          href="waze://?q=<%D7%A7%D7%A1%D7%99%D7%95%D7%A4%D7%99%D7%90%D7%94 %D7%90%D7%99%D7%A8%D7%95%D7%A2%D7%99%D7%9D>">
+          <span><i class="fab fa-waze"></i></span>
+          <span>ניווט לאירוע</span>
+        </a>
       </div>
     </div>
   </section>

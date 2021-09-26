@@ -1,0 +1,94 @@
+@import url(../../node_modules/flipdown/dist/flipdown.css);
+.container {
+  max-width: 1280px;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 15px;
+  padding-left: 15px;
+  width: 100%; }
+
+.btn {
+  z-index: 9999;
+  cursor: pointer;
+  display: inline-block;
+  background: #7dd2e7;
+  text-decoration: none;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  padding: 0.6rem 1.2rem;
+  margin: 0.5rem 0.5rem;
+  transition: all 0.3s ease-out;
+  line-height: 1.35rem; }
+  .btn:hover {
+    background: #a8e1ef;
+    transform: scale(1.1);
+    color: #333; }
+  .btn-danger {
+    background: #db43ba;
+    color: #333; }
+    .btn-danger:hover {
+      background: #e36eca;
+      color: #333; }
+  .btn-orange {
+    background: #e6ca4e;
+    color: #333; }
+    .btn-orange:hover {
+      background: #ecd77b;
+      color: #333; }
+  .btn-secondary {
+    background: #7dd2e7;
+    color: #333; }
+    .btn-secondary:hover {
+      background: #a8e1ef;
+      color: #333; }
+
+@keyframes pulsate {
+  from {
+    transform: scale(0.7); }
+  60% {
+    opacity: 1; }
+  to {
+    opacity: 0;
+    transform: scale(1); } }
+
+@keyframes wiggle {
+  from {
+    transform: rotate(15deg); }
+  50% {
+    transform: rotate(-15deg);
+    color: #db43ba; }
+  100% {
+    transform: rotate(15deg); } }
+
+@media (max-height: 767px) {
+  @keyframes wiggle {
+    from {
+      transform: rotate(5deg); }
+    50% {
+      transform: rotate(-5deg);
+      color: #db43ba; }
+    100% {
+      transform: rotate(5deg); } } }
+
+#clock {
+  margin-top: 1rem;
+  z-index: 1; }
+  #clock p {
+    letter-spacing: -0.3rem;
+    font-size: 4rem;
+    text-shadow: 0 0 5px #888, 0 0 10px #888; }
+  #clock .flipdown.flipdown__theme-light .rotor-bottom,
+  #clock .flipdown.flipdown__theme-light .rotor-leaf-rear {
+    background-color: #ccc !important; }
+  #clock .flipdown.flipdown__theme-light .rotor-group-heading::before {
+    color: #333;
+    text-shadow: 0 0 5px #ccc, 0 0 10px #ccc; }
+  #clock .flipdown.flipdown__theme-light .timepassed {
+    margin: 1rem 0;
+    font-size: 5rem;
+    font-weight: 800;
+    color: #7dd2e7;
+    text-shadow: 0 0 5px #333, 0 0 10px #333;
+    animation: wiggle 1.3s ease-in-out;
+    animation-iteration-count: infinite; }
