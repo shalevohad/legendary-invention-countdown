@@ -1,4 +1,4 @@
-let deadeline = new Date(2023, 3, 20, 19, 0, 0);
+let deadeline = new Date(2023, 2, 20, 19, 0, 0);
 let interval;
 
 $(document).ready(function () {
